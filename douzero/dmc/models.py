@@ -368,10 +368,11 @@ class General_Model:
         return model.forward(z, x, training, flags, debug)
 
     def share_memory(self):
-        self.models['landlord'].share_memory()
-        self.models['landlord_up'].share_memory()
-        self.models['landlord_down'].share_memory()
-        self.models['bidding'].share_memory()
+        # self.models['landlord'].share_memory()
+        # self.models['landlord_up'].share_memory()
+        # self.models['landlord_down'].share_memory()
+        # self.models['bidding'].share_memory()
+        pass
 
     def eval(self):
         self.models['landlord'].eval()
@@ -406,9 +407,10 @@ class OldModel:
         return model.forward(z, x, training, flags)
 
     def share_memory(self):
-        self.models['landlord'].share_memory()
-        self.models['landlord_up'].share_memory()
-        self.models['landlord_down'].share_memory()
+        # self.models['landlord'].share_memory()
+        # self.models['landlord_up'].share_memory()
+        # self.models['landlord_down'].share_memory()
+        pass
 
     def eval(self):
         self.models['landlord'].eval()
@@ -445,10 +447,11 @@ class Model:
         return model.forward(z, x, training, flags, debug)
 
     def share_memory(self):
-        self.models['landlord'].share_memory()
-        self.models['landlord_up'].share_memory()
-        self.models['landlord_down'].share_memory()
-        self.models['bidding'].share_memory()
+        # self.models['landlord'].share_memory()
+        # self.models['landlord_up'].share_memory()
+        # self.models['landlord_down'].share_memory()
+        # self.models['bidding'].share_memory()
+        pass
 
     def eval(self):
         self.models['landlord'].eval()

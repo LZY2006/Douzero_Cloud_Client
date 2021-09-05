@@ -149,7 +149,6 @@ def train(flags):
     models = {}
     for device in device_iterator:
         model = Model(device="cpu")
-        model.share_memory()
         model.eval()
         models[device] = model
 
